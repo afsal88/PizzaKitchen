@@ -1,0 +1,39 @@
+<div class="col-md-12" ng-controller="OrderdetailsCtrl">
+<br><br><h1>Pizza Kitchen</h1>
+<h4>Its Pizza Time...!&nbsp&nbspGrab a Pizza...!</h4> 
+<ul id="Hr-1">
+<li><a href="#SignUp">Sign Up</a></li>
+<li><a href="#login">Login</a></li>
+<li><a href="#MenuDisplay">Menu</a></li>
+</ul><br><br><br>
+<form name ="order" >
+<table>
+<h2> User Details </h2>
+<label>Name : {{userdata.name}}</label>
+<label>Delivery Address :<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.housename}}<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.locality}}<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.city}}<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.state}}<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.pincode}}</label>
+
+<h2> Order Details </h2>
+<img src ="{{itemdata.image}}"><br>
+<label>Item name &nbsp&nbsp:{{itemdata.name}}</label>
+<label class = "light">Price &nbsp&nbsp: <img src ="rupee.png" width="15px"> {{itemdata.price}}</label>
+<label>Size &nbsp&nbsp:{{itemdata.size}}</label>
+<label>Category&nbsp&nbsp :{{itemdata.category}}</label>
+<tr><td><label>Quantity</label></td>
+<td><input type="text" 
+        placeholder="Enter Quantity" 
+        name="quantity" 
+        ng-model="itemdata.quantity" 
+        required =""/></td>
+  </tr>
+  <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label name = "amount" class = "light">Total Amount : <img src ="rupee.png" width="15px">{{itemdata.price * itemdata.quantity}}</label></td></tr>
+<tr><td><button type="submit" ng-click="checkout()">Checkout</button></td></tr>
+
+</form>
+<div class="footer"><img src = "footer.jpg" height ="100px" width = "1050px"></div>
+
+</div>

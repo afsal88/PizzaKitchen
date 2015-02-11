@@ -1,0 +1,69 @@
+<div class="col-md-12" ng-controller="AdditemCtrl">
+<br><h1><img src = "logo.png" width ="120px">Pizza Kitchen</h1><h4>Its Pizza Time...!&nbsp&nbspGrab a Pizza...!</h4> 
+<ul id="Hr-1">
+<li><a href="#SignUp">Sign Up</a></li>
+<li><a href="#login">Login</a></li>
+<li><a href="#MenuDisplay">Menu</a></li>
+</ul><br><br><br>
+<div>
+<form name ="additemform" ng-submit="additem(item)">
+<table cellpadding="20">
+<tr><h3>Add an Item</h3></tr>
+<tr>
+<td><label>Name</label></td>
+      <td><input type="text" 
+        placeholder="Name" 
+        name="name" 
+        ng-model="item.name" 
+        required =""/></td>
+</tr>
+<tr>
+<td><label>Category</label></td>
+      <td>
+      <select class="form-control" 
+      ng-model="item.category">
+      <option>------Select------</option>
+      <option value="Veg">Veg</option>
+      <option value="Non-veg">Non-veg</option> 
+      </select></td>
+</tr>
+<tr>
+<td><label>Size</label></td>
+      <td><select class="form-control" 
+      ng-model="item.size">
+      <option>------Select------</option>
+      <option value="personal">Personal</option>
+      <option value="medium">Medium</option>
+      <option value="full">Full</option>
+      </select></td>
+</tr>
+<tr>
+<td><label>Description</label></td>
+      <td><input type="text" 
+        placeholder="Description" 
+        name="description" 
+        ng-model="item.description" 
+        required =""/></td>
+</tr>
+<td><label>Price</label></td>
+      <td><input type="text" 
+        placeholder="Price" 
+        name="price" 
+        ng-model="item.price" 
+        required =""/></td>
+</tr>
+<tr>
+<td><label>Attatch image</label></td>
+    <td><input type="file" 
+      name="image" 
+      id="image"
+      ng-model="item.image"/><td>
+</tr>
+
+<tr><td><td><button type="submit" >Add Item</button></td></td></tr>
+</table>
+</form>
+</div>
+<div class="footer"><img src = "footer.jpg" height ="100px" width = "1050px"></div>
+
+</div>

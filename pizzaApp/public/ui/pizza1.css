@@ -1,0 +1,232 @@
+#Hr-1 {
+list-style:none;
+margin:0 0 0px 0;
+padding:0;
+
+}
+#Hr-1 li {
+margin:0;
+padding:0;
+float:left;
+}
+#Hr-1 li a {
+display:inline;
+overflow:hidden;
+width:auto;
+margin:0;
+padding:8px 12px;
+text-decoration:none;
+text-transform:capitalize;
+text-align:center;
+font-weight:bold;
+font-style:normal;
+font-size:23px;
+color:rgba(236,236,236,0.5);
+text-shadow:0px 1px 0px #000;
+border-right:1px solid #202020;
+background-color::#4B4B4B;
+background:-webkit-gradient(linear,left top,right bottom,from(#2B2B2B),color-stop(0.33 #4B4B4B),color-stop(0.66 #5B5B5B),to(#3D3C3C));
+background:-webkit-linear-gradient(top,#2B2B2B 0%,#4B4B4B 33%,#5B5B5B 66%,#3D3C3C 100%);
+background:-moz-linear-gradient(top,#2B2B2B 0%,#4B4B4B 33%,#5B5B5B 66%,#3D3C3C 100%);
+background:-o-linear-gradient(top,#2B2B2B 0%,#4B4B4B 33%,#5B5B5B 66%,#3D3C3C 100%);
+background:-ms-linear-gradient(top,#2B2B2B 0%,#4B4B4B 33%,#5B5B5B 66%,#3D3C3C 100%);
+background:linear-gradient(top,#2B2B2B 0%,#4B4B4B 33%,#5B5B5B 66%,#3D3C3C 100%);
+-moz-transition:all 0.5s ease-in;
+-webkit-transition:all 0.5s ease-in;
+-o-transition:all 0.5s ease-in;
+transition:all 0.5s ease-in;
+}
+#Hr-1 li a:hover,#Hr-1 li a:active,#Hr-1 li a:focus {
+color:#ECB036;
+text-shadow:0px 1px 0px #8E620C;
+background:#313130;
+-moz-transition:none;-webkit-transition:none;-o-transition:none;transition:none;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  background-image: url("pizza/kk3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  color: blue;
+}
+h2 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  color: maroon;
+}
+h3 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  color: blue;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+label.message{
+ font-family:"Times New Roman", Times, serif;
+ color :maroon;
+ font-weight: bold;
+ font-size: 18px;
+}
+
+.imagedis{
+       
+       width:auto;
+       height: auto;
+
+}
+
+.namedis{
+       font-family:"Times New Roman", Times, serif;
+       font-size: 16px;
+       font-weight: bold;
+       color: #686868 ;
+}
+.pricedis{
+       font-family:"Times New Roman", Times, serif;
+       font-size: 16px;
+       font-weight: bold;
+       color:red;
+      
+}
+.itemdis{
+       font-family:"Times New Roman", Times, serif;
+       font-size: 16px;
+       font-weight: bold;
+       color:blue;
+      
+}
+label.light{
+  display: block;
+  margin-bottom: 8px;
+  color: red;
+}
+
+/*label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+*/
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}

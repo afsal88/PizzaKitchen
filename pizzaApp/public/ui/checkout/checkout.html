@@ -1,0 +1,38 @@
+<div class="col-md-12" ng-controller="CheckoutCtrl">
+<br><h1><img src = "logo.png" width ="120px">Pizza Kitchen</h1><h4>Its Pizza Time...!&nbsp&nbspGrab a Pizza...!</h4> 
+<form name ="c" >
+<ul id="Hr-1">
+<li><a href="#SignUp">Sign Up</a></li>
+<li><a href="#login">Login</a></li>
+<li><a href="#MenuDisplay">Menu</a></li>
+</ul><br><br><br>
+<table>
+<h2> User Details </h2>
+<label>Name : {{userdata.name}}</label>
+<label>Delivery Address :<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.address1}}<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.address2}}<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.city}}<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.state}}<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{userdata.pincode}}</label>
+
+<h2> Order Details </h2>
+<div ng-repeat="order in itemdata">
+<img src ="{{order.image}}"><br>
+<label>Item name &nbsp&nbsp:{{order.name}}</label>
+<label class = "light">Price &nbsp&nbsp: <img src ="rupee.png" width="15px"> {{order.price}}</label>
+<label>Size &nbsp&nbsp:{{order.size}}</label>
+<label>Category&nbsp&nbsp :{{order.category}}</label>
+<label>Quantity&nbsp&nbsp :{{order.quantity}}</label>
+
+  <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label name = "amount" class = "light">Total Amount : <img src ="rupee.png" width="15px">{{itemdata.total}}</label></td></tr>
+ </div>
+<tr><td><button type="submit" ng-click="checkout()">Checkout</button></td></tr>
+
+</form>
+<div class="footer"><img src = "footer.jpg" height ="100px" width = "1050px"></div>
+
+</div>
+
+
+

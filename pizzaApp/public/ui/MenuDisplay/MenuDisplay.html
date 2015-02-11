@@ -1,0 +1,41 @@
+<div class="col-md-12" ng-controller="MenudisplayCtrl">
+<br><h1><img src = "logo.png" width ="120px">Pizza Kitchen</h1><h4>Its Pizza Time...!&nbsp&nbspGrab a Pizza...!</h4> 
+<ul id="Hr-1">
+<li><a href="#SignUp">Sign Up</a></li>
+<li><a href="#login">Login</a></li>
+<li><a href="#MenuDisplay">Menu</a></li>
+</ul><br><br><br>
+<div>
+<input type ="image" src = "cart.png" width = "60px" ng-click="cartdisplay()">
+<label>{{cartvalue}}</label>
+</div>
+<form>
+<h2>Choose your Pizza</h2>
+<div  align = "center"class ="imagedis" ng-repeat="pizza in pizzas">
+
+<img src="{{pizza.image}}">
+<div class="itemdis">
+ {{pizza.name}}
+</div>
+<div class="pricedis">
+Price: <img src ="rupee.png" width="10px">{{pizza.price}}
+</div>   
+<div class="namedis">
+Ingredients: {{pizza.description}}
+</div>
+<div class="namedis">
+Size: {{pizza.size}}
+</div>
+<div class="namedis">
+Category: {{pizza.category}}
+</div>
+ <button type = "submit" class="b1" ng-click ="order(pizza)">Order now</button>
+ <button type="submit" class="b1" ng-click ="addtocart(pizza)">Add to Cart</button>
+
+</div>
+</form>
+<div class="footer"><img src = "footer.jpg" height ="100px" width = "1050px"></div>
+
+</div>
+
+

@@ -1,0 +1,36 @@
+<div class="col-md-12" ng-controller="LoginCtrl">
+<br><h1><img src = "logo.png" width ="120px">Pizza Kitchen</h1>
+<h4>Its Pizza Time...!&nbsp&nbspGrab a Pizza...!</h4> 
+<ul id="Hr-1">
+<li><a href="#SignUp">Sign Up</a></li>
+<li><a href="#login">Login</a></li>
+<li><a href="#MenuDisplay">Menu</a></li>
+</ul><br><br><br>
+<body align="center">
+
+<form name="form" ng-submit="login(email,password)">
+<fieldset>
+<legend>Login here</legend>
+<label>Email id</label>
+      <td><input type="email" 
+        placeholder="Email" 
+        name="email" 
+        ng-model="email" 
+         required =""/>
+
+<label>Password</label> 
+        <input type="password" 
+        placeholder="Password" 
+        name="password" 
+        ng-model="password" 
+        ng-minlength=6 
+        ng-maxlength=20 required />
+</fieldset>
+ <button type="submit">Login</button>
+<label>{{label}}</label>
+</form>
+
+</body>
+<div class="footer"><img src = "footer.jpg" height ="110px" width = "1050px"></div>
+
+</div>

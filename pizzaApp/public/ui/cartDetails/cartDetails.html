@@ -1,0 +1,42 @@
+<div class="col-md-12" ng-controller="CartdetailsCtrl">
+<br><h1><img src = "logo.png" width ="120px">Pizza Kitchen</h1><h4>Its Pizza Time...!&nbsp&nbspGrab a Pizza...!</h4> 
+<ul id="Hr-1">
+<li><a href="#SignUp">Sign Up</a></li>
+<li><a href="#login">Login</a></li>
+<li><a href="#MenuDisplay">Menu</a></li>
+</ul><br><br><br>
+<form>
+<h2>Cart Items</h2>
+<div  align = "center"class ="imagedis" ng-repeat="cartitem in cartitems">
+
+<img src="{{cartitem.image}}">
+<div class="itemdis">
+ {{cartitem.name}}
+</div>
+<div class="pricedis">
+Price: <img src ="rupee.png" width="10px">{{cartitem.price}}
+</div>   
+<div class="namedis">
+Ingredients: {{cartitem.description}}
+</div>
+<div class="namedis">
+Size: {{cartitem.size}}
+</div>
+<div class="namedis">
+Category: {{cartitem.category}}
+</div >
+<div class="namedis">
+Quantity:<input type="text" 
+        placeholder="Enter Quantity" 
+        name="quantity" 
+        ng-model="cartitem.quantity" 
+        required =""/>
+ </div>
+</div>
+ <button type="submit" ng-click = "confirm()" >Confirm Order</button>
+</form>
+<div class="footer"><img src = "footer.jpg" height ="100px" width = "1050px"></div>
+
+</div>
+
+

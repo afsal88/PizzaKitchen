@@ -1,0 +1,51 @@
+<div class="col-md-12" ng-controller="VieworderCtrl">
+<br><h1><img src = "logo.png" width ="120px">Pizza Kitchen</h1><h4>Its Pizza Time...!&nbsp&nbspGrab a Pizza...!</h4> 
+<ul id="Hr-1">
+<li><a href="#SignUp">Sign Up</a></li>
+<li><a href="#login">Login</a></li>
+<li><a href="#MenuDisplay">Menu</a></li>
+</ul><br><br><br>
+<table>
+	<th>Date &nbsp&nbsp&nbsp&nbsp</th>
+	<th>Customer Name&nbsp&nbsp&nbsp&nbsp</th>
+	<th>Mobile no&nbsp&nbsp&nbsp&nbsp</th>
+	<th>Amount&nbsp&nbsp&nbsp&nbsp</th>
+	<th>Action&nbsp&nbsp&nbsp&nbsp</th>
+	<tr ng-repeat = "order in orders">
+	<td>{{order.date}}</td>
+	<td>{{order.user.name}}</td>
+	<td>{{order.user.mobile}}</td>
+	<td>{{order.amount}}</td>
+	<td><a href="" ng-click = "vieworders(order)" >Pizza Details</a></td>	
+	</tr>
+</table>
+<div ng-show = "show" ng-repeat = "pizza in pizzas">
+
+<img src="{{pizza.image}}">
+<div class="itemdis">
+ {{pizza.name}}
+</div>
+
+<div class="pricedis">
+Price: <img src ="rupee.png" width="10px">{{pizza.price}}
+</div>  
+
+<div class="namedis">
+Ingredients: {{pizza.description}}
+</div>
+<div class="namedis">
+Size: {{pizza.size}}
+</div>
+
+<div class="namedis">
+Category: {{pizza.category}}
+</div >
+
+<div class="namedis">
+Quantity: {{pizza.quantity}}
+</div >
+
+</div>
+<div class="footer"><img src = "footer.jpg" height ="100px" width = "1050px"></div>
+
+</div>
